@@ -1,12 +1,15 @@
 
 package net.mcreator.revive.item;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
 
 import net.mcreator.revive.procedures.WhenhitProcedure;
 
@@ -40,9 +43,9 @@ public class MusicItem extends SwordItem {
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		WhenhitProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ());
-		return retval;
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		WhenhitProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ());
+		return ar;
 	}
 }

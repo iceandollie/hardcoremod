@@ -612,8 +612,8 @@
       "registry_name": "cheese",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/revive/item/CheeseItem.java",
-          "src/main/resources/assets/revive/models/item/cheese.json"
+          "src/main/resources/assets/revive/models/item/cheese.json",
+          "src/main/java/net/mcreator/revive/item/CheeseItem.java"
         ]
       },
       "path": "~/SWORDS"
@@ -627,8 +627,8 @@
       "registry_name": "fire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/revive/models/item/fire.json",
-          "src/main/java/net/mcreator/revive/item/FireItem.java"
+          "src/main/java/net/mcreator/revive/item/FireItem.java",
+          "src/main/resources/assets/revive/models/item/fire.json"
         ]
       },
       "path": "~/SWORDS"
@@ -682,8 +682,8 @@
       "registry_name": "music",
       "metadata": {
         "files": [
-          "src/main/resources/assets/revive/models/item/music.json",
-          "src/main/java/net/mcreator/revive/item/MusicItem.java"
+          "src/main/java/net/mcreator/revive/item/MusicItem.java",
+          "src/main/resources/assets/revive/models/item/music.json"
         ]
       },
       "path": "~/SWORDS"

@@ -23,7 +23,7 @@
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onEntityHitWith": {
+    "onRightClickedInAir": {
       "name": "Whenhit"
     }
   }
