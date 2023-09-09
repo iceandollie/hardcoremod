@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.revive.item.TotemItem;
 import net.mcreator.revive.item.RegularSwordItem;
+import net.mcreator.revive.item.MusicItem;
 import net.mcreator.revive.item.LifeItem;
 import net.mcreator.revive.item.IceswordItem;
 import net.mcreator.revive.item.GrayItem;
@@ -38,6 +39,7 @@ public class ReviveModItems {
 	public static final RegistryObject<Item> ICESWORD = REGISTRY.register("icesword", () -> new IceswordItem());
 	public static final RegistryObject<Item> CHEESE = REGISTRY.register("cheese", () -> new CheeseItem());
 	public static final RegistryObject<Item> FIRE = REGISTRY.register("fire", () -> new FireItem());
+	public static final RegistryObject<Item> MUSIC = REGISTRY.register("music", () -> new MusicItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

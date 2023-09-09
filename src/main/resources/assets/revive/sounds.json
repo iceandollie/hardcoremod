@@ -1,0 +1,18 @@
+{
+  "voicecrack": {
+    "sounds": [
+      {
+        "name": "revive:2023-09-09-22-49-05",
+        "stream": true
+      }
+    ]
+  },
+  "originalspec": {
+    "sounds": [
+      {
+        "name": "revive:x2mate.com-zedd-skins-music-_-valorant-_-sound-effect-_-spectrum-bundle-_128-kbps_",
+        "stream": true
+      }
+    ]
+  }
+}

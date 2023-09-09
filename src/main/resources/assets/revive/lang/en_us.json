@@ -1,9 +1,12 @@
 {
+  "item.revive.music": "Music Sword",
   "item.revive.totem": "Totem of Rivival",
   "item.revive.cheese": "Cheese Sword",
   "block.revive.fragile_mud_bricks": "Fragile Mud Bricks",
+  "subtitles.originalspec": "",
   "item.revive.fire": "Fire Sword",
   "advancements.eg.descr": "Obtain a frozen sniffer egg in a dungeon.",
+  "subtitles.voicecrack": "",
   "block.revive.frozen_sniffer_egg": "Frozen Sniffer Egg",
   "entity.revive.enfirium": "Enfirium",
   "item.revive.icesword": "Ice Sword",

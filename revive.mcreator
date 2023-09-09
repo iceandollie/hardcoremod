@@ -652,17 +652,104 @@
         ]
       },
       "path": "~/SWORDS"
+    },
+    {
+      "name": "Cheesehit",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheesehit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/CheesehitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SWORDS"
+    },
+    {
+      "name": "Music",
+      "type": "tool",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "music",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revive/models/item/music.json",
+          "src/main/java/net/mcreator/revive/item/MusicItem.java"
+        ]
+      },
+      "path": "~/SWORDS"
+    },
+    {
+      "name": "Whenhit",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whenhit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/WhenhitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SWORDS"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "voicecrack",
+      "files": [
+        "2023-09-09-22-49-05"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "originalspec",
+      "files": [
+        "x2mate.com-zedd-skins-music-_-valorant-_-sound-effect-_-spectrum-bundle-_128-kbps_"
+      ],
+      "category": "music",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
+      "item.revive.music": "Music Sword",
       "item.revive.totem": "Totem of Rivival",
       "item.revive.cheese": "Cheese Sword",
       "block.revive.fragile_mud_bricks": "Fragile Mud Bricks",
+      "subtitles.originalspec": "",
       "item.revive.fire": "Fire Sword",
       "advancements.eg.descr": "Obtain a frozen sniffer egg in a dungeon.",
+      "subtitles.voicecrack": "",
       "block.revive.frozen_sniffer_egg": "Frozen Sniffer Egg",
       "entity.revive.enfirium": "Enfirium",
       "item.revive.icesword": "Ice Sword",

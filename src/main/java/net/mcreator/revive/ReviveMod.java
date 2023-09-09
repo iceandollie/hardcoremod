@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.revive.init.ReviveModTabs;
+import net.mcreator.revive.init.ReviveModSounds;
 import net.mcreator.revive.init.ReviveModItems;
 import net.mcreator.revive.init.ReviveModEntities;
 import net.mcreator.revive.init.ReviveModBlocks;
@@ -51,7 +52,7 @@ public class ReviveMod {
 	public ReviveMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		ReviveModSounds.REGISTRY.register(bus);
 		ReviveModBlocks.REGISTRY.register(bus);
 
 		ReviveModItems.REGISTRY.register(bus);
