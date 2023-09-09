@@ -632,6 +632,26 @@
         ]
       },
       "path": "~/SWORDS"
+    },
+    {
+      "name": "Firehit",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firehit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/FirehitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SWORDS"
     }
   ],
   "variable_elements": [],
