@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:emerald_block"
+    },
+    "1": {
+      "item": "minecraft:sculk"
+    },
+    "2": {
+      "item": "minecraft:emerald_block"
+    },
+    "3": {
+      "item": "minecraft:sculk"
+    },
+    "4": {
+      "item": "revive:life"
+    },
+    "5": {
+      "item": "minecraft:sculk"
+    },
+    "7": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "item": "revive:totem",
+    "count": 1
+  }
+}

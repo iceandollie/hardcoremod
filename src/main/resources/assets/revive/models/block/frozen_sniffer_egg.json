@@ -1,0 +1,9 @@
+{
+  "parent": "revive:custom/frozen_sniffer_egg",
+  "textures": {
+    "all": "revive:block/frozen_sniffer_egg_item",
+    "particle": "revive:block/frozen_sniffer_egg_item",
+    "0": "revive:block/frozen_sniffer_egg"
+  },
+  "render_type": "translucent"
+}

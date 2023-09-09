@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "revive:goo"
+    },
+    "title": {
+      "translate": "advancements.ew.title"
+    },
+    "description": {
+      "translate": "advancements.ew.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ew": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "revive:goo"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "revive:ice_advancement"
+}

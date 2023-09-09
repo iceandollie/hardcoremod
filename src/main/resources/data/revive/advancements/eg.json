@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "revive:frozen_sniffer_egg"
+    },
+    "title": {
+      "translate": "advancements.eg.title"
+    },
+    "description": {
+      "translate": "advancements.eg.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "revive:frozen_sniffer_egg"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "revive:ice_advancement"
+}

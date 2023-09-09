@@ -1,0 +1,659 @@
+{
+  "mod_elements": [
+    {
+      "name": "Totem",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revive/models/item/totem.json",
+          "src/main/java/net/mcreator/revive/item/TotemItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Reviveprocedure",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reviveprocedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/ReviveprocedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Revive",
+      "type": "command",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/command/ReviveCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Life",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revive/models/item/life.json",
+          "src/main/java/net/mcreator/revive/item/LifeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "LifeRightclicked",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/LifeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lifewithdraw",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lifewithdraw",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/LifewithdrawProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lifetake",
+      "type": "command",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lifetake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/command/LifetakeCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Totemre",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totemre",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/recipes/totemre.json"
+        ]
+      }
+    },
+    {
+      "name": "Kick",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/KickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tr",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tr",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/TrProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ctr",
+      "type": "command",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ctr",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/command/CtrCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CauldronOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cauldron_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/CauldronOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cauldron",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cauldron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/block/CauldronBlock.java",
+          "src/main/resources/assets/revive/blockstates/cauldron.json",
+          "src/main/resources/assets/revive/models/item/cauldron.json",
+          "src/main/resources/assets/revive/models/block/cauldron.json"
+        ]
+      }
+    },
+    {
+      "name": "Goorightclick",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goorightclick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/GoorightclickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Goo",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/item/GooItem.java",
+          "src/main/resources/assets/revive/models/item/goo.json"
+        ]
+      }
+    },
+    {
+      "name": "Goor",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/recipes/goor.json"
+        ]
+      }
+    },
+    {
+      "name": "Hearts",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hearts",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/recipes/hearts.json"
+        ]
+      }
+    },
+    {
+      "name": "JebWool",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jeb_wool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revive/blockstates/jeb_wool.json",
+          "src/main/resources/assets/revive/models/item/jeb_wool.json",
+          "src/main/resources/assets/revive/models/block/jeb_wool.json",
+          "src/main/java/net/mcreator/revive/block/JebWoolBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "RGBrecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rg_brecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/recipes/rg_brecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "FrozenSnifferEgg",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_sniffer_egg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revive/blockstates/frozen_sniffer_egg.json",
+          "src/main/resources/assets/revive/models/item/frozen_sniffer_egg.json",
+          "src/main/resources/assets/revive/models/block/frozen_sniffer_egg.json",
+          "src/main/java/net/mcreator/revive/block/FrozenSnifferEggBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "CoockEgg",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coock_egg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/recipes/coock_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Ew",
+      "type": "achievement",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ew",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/advancements/ew.json"
+        ]
+      }
+    },
+    {
+      "name": "IceAdvancement",
+      "type": "achievement",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/advancements/ice_advancement.json"
+        ]
+      }
+    },
+    {
+      "name": "Eg",
+      "type": "achievement",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/advancements/eg.json"
+        ]
+      }
+    },
+    {
+      "name": "RegularSword",
+      "type": "tool",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regular_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/item/RegularSwordItem.java",
+          "src/main/resources/assets/revive/models/item/regular_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "GrayRightclicked",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gray_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/GrayRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SWORDS"
+    },
+    {
+      "name": "Gray",
+      "type": "tool",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gray",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/item/GrayItem.java",
+          "src/main/resources/assets/revive/models/item/gray.json"
+        ]
+      },
+      "path": "~/SWORDS"
+    },
+    {
+      "name": "FragileMudBricks",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fragile_mud_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revive/models/item/fragile_mud_bricks.json",
+          "src/main/resources/assets/revive/blockstates/fragile_mud_bricks.json",
+          "src/main/java/net/mcreator/revive/block/FragileMudBricksBlock.java",
+          "src/main/resources/assets/revive/models/block/fragile_mud_bricks.json"
+        ]
+      }
+    },
+    {
+      "name": "FragileMudBricksPlayerStartsToDestroy",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fragile_mud_bricks_player_starts_to_destroy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/FragileMudBricksPlayerStartsToDestroyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FragileMudBricksEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fragile_mud_bricks_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/FragileMudBricksEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Enfirium",
+      "type": "livingentity",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enfirium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revive/models/item/enfirium_spawn_egg.json",
+          "src/main/java/net/mcreator/revive/client/renderer/EnfiriumRenderer.java",
+          "src/main/java/net/mcreator/revive/entity/EnfiriumEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "IceswordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icesword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/IceswordLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SWORDS"
+    },
+    {
+      "name": "Icesword",
+      "type": "tool",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "icesword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revive/models/item/icesword.json",
+          "src/main/java/net/mcreator/revive/item/IceswordItem.java"
+        ]
+      },
+      "path": "~/SWORDS"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.revive.totem": "Totem of Rivival",
+      "block.revive.fragile_mud_bricks": "Fragile Mud Bricks",
+      "advancements.eg.descr": "Obtain a frozen sniffer egg in a dungeon.",
+      "block.revive.frozen_sniffer_egg": "Frozen Sniffer Egg",
+      "entity.revive.enfirium": "Enfirium",
+      "item.revive.icesword": "Ice Sword",
+      "advancements.ice_advancement.descr": "It might be usefull or fun or both",
+      "block.revive.cauldron": "Cauldron",
+      "item.revive.goo": "Goo",
+      "advancements.ew.title": "Ew...",
+      "advancements.ice_advancement.title": "Ice\u0027s Advancement",
+      "advancements.eg.title": "Should we boil it ?",
+      "item.revive.enfirium_spawn_egg": "Enfirium Spawn Egg",
+      "item.revive.life": "Life",
+      "item.revive.regular_sword": "Sword",
+      "block.revive.jeb_wool": "Jeb_ Wool",
+      "item.revive.gray": "Gamersupps",
+      "advancements.ew.descr": "Craft goo using slime balls."
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "SWORDS",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "revive",
+    "modName": "revive",
+    "version": "1.0.0",
+    "author": "bleuf, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.revive",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

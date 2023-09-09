@@ -1,0 +1,13 @@
+{
+  "parent": "revive:custom/cauldron",
+  "textures": {
+    "all": "revive:block/cauldron_side",
+    "particle": "revive:block/cauldron_side",
+    "side": "revive:block/cauldron_side",
+    "top": "revive:block/cauldron_top",
+    "bottom": "revive:block/cauldron_bottom",
+    "inside": "revive:block/cauldron_inner",
+    "slime": "revive:block/slime_block"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "revive:block/rgb",
+    "up": "revive:block/rgb",
+    "north": "revive:block/rgb",
+    "east": "revive:block/rgb",
+    "south": "revive:block/rgb",
+    "west": "revive:block/rgb",
+    "particle": "revive:block/rgb"
+  },
+  "render_type": "solid"
+}

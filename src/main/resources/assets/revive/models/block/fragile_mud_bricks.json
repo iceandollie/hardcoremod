@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "revive:block/fragile_mud_bricks",
+    "up": "revive:block/fragile_mud_bricks",
+    "north": "revive:block/fragile_mud_bricks",
+    "east": "revive:block/fragile_mud_bricks",
+    "south": "revive:block/fragile_mud_bricks",
+    "west": "revive:block/fragile_mud_bricks",
+    "particle": "revive:block/fragile_mud_bricks"
+  },
+  "render_type": "solid"
+}
