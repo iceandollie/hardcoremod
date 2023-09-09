@@ -465,8 +465,8 @@
       "registry_name": "gray",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/revive/item/GrayItem.java",
-          "src/main/resources/assets/revive/models/item/gray.json"
+          "src/main/resources/assets/revive/models/item/gray.json",
+          "src/main/java/net/mcreator/revive/item/GrayItem.java"
         ]
       },
       "path": "~/SWORDS"
@@ -597,8 +597,23 @@
       "registry_name": "icesword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/revive/models/item/icesword.json",
-          "src/main/java/net/mcreator/revive/item/IceswordItem.java"
+          "src/main/java/net/mcreator/revive/item/IceswordItem.java",
+          "src/main/resources/assets/revive/models/item/icesword.json"
+        ]
+      },
+      "path": "~/SWORDS"
+    },
+    {
+      "name": "Cheese",
+      "type": "tool",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/item/CheeseItem.java",
+          "src/main/resources/assets/revive/models/item/cheese.json"
         ]
       },
       "path": "~/SWORDS"
@@ -609,6 +624,7 @@
   "language_map": {
     "en_us": {
       "item.revive.totem": "Totem of Rivival",
+      "item.revive.cheese": "Cheese Sword",
       "block.revive.fragile_mud_bricks": "Fragile Mud Bricks",
       "advancements.eg.descr": "Obtain a frozen sniffer egg in a dungeon.",
       "block.revive.frozen_sniffer_egg": "Frozen Sniffer Egg",
