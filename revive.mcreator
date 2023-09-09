@@ -617,6 +617,21 @@
         ]
       },
       "path": "~/SWORDS"
+    },
+    {
+      "name": "Fire",
+      "type": "tool",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/revive/models/item/fire.json",
+          "src/main/java/net/mcreator/revive/item/FireItem.java"
+        ]
+      },
+      "path": "~/SWORDS"
     }
   ],
   "variable_elements": [],
@@ -626,6 +641,7 @@
       "item.revive.totem": "Totem of Rivival",
       "item.revive.cheese": "Cheese Sword",
       "block.revive.fragile_mud_bricks": "Fragile Mud Bricks",
+      "item.revive.fire": "Fire Sword",
       "advancements.eg.descr": "Obtain a frozen sniffer egg in a dungeon.",
       "block.revive.frozen_sniffer_egg": "Frozen Sniffer Egg",
       "entity.revive.enfirium": "Enfirium",

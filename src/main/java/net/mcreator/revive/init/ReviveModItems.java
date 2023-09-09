@@ -19,6 +19,7 @@ import net.mcreator.revive.item.LifeItem;
 import net.mcreator.revive.item.IceswordItem;
 import net.mcreator.revive.item.GrayItem;
 import net.mcreator.revive.item.GooItem;
+import net.mcreator.revive.item.FireItem;
 import net.mcreator.revive.item.CheeseItem;
 import net.mcreator.revive.ReviveMod;
 
@@ -36,6 +37,7 @@ public class ReviveModItems {
 	public static final RegistryObject<Item> ENFIRIUM_SPAWN_EGG = REGISTRY.register("enfirium_spawn_egg", () -> new ForgeSpawnEggItem(ReviveModEntities.ENFIRIUM, -16738048, -154, new Item.Properties()));
 	public static final RegistryObject<Item> ICESWORD = REGISTRY.register("icesword", () -> new IceswordItem());
 	public static final RegistryObject<Item> CHEESE = REGISTRY.register("cheese", () -> new CheeseItem());
+	public static final RegistryObject<Item> FIRE = REGISTRY.register("fire", () -> new FireItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
