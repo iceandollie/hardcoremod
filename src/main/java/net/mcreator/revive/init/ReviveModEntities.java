@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.revive.entity.EnfiriumEntity;
+import net.mcreator.revive.entity.BanditEntity;
 import net.mcreator.revive.ReviveMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -24,6 +25,10 @@ public class ReviveModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ReviveMod.MODID);
 	public static final RegistryObject<EntityType<EnfiriumEntity>> ENFIRIUM = register("enfirium",
 			EntityType.Builder.<EnfiriumEntity>of(EnfiriumEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EnfiriumEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BanditEntity>> BANDIT = register("bandit",
+			EntityType.Builder.<BanditEntity>of(BanditEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BanditEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -35,11 +40,13 @@ public class ReviveModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			EnfiriumEntity.init();
+			BanditEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(ENFIRIUM.get(), EnfiriumEntity.createAttributes().build());
+		event.put(BANDIT.get(), BanditEntity.createAttributes().build());
 	}
 }

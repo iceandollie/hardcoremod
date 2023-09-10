@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class WhenhitProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (0.69 == Math.random()) {
+		if (Math.random() == 0.69) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("revive:originalspec")), SoundSource.PLAYERS, 1, 1);

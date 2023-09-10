@@ -39,6 +39,7 @@ public class ReviveModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(ReviveModItems.ENFIRIUM_SPAWN_EGG.get());
+			tabData.accept(ReviveModItems.BANDIT_SPAWN_EGG.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
