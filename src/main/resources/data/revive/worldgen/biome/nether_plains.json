@@ -1,0 +1,47 @@
+{
+  "has_precipitation": true,
+  "temperature": 1.3,
+  "downfall": 0.5,
+  "effects": {
+    "foliage_color": -26266,
+    "grass_color": -26266,
+    "sky_color": -26266,
+    "fog_color": -26266,
+    "water_color": -26266,
+    "water_fog_color": -26266
+  },
+  "spawners": {
+    "monster": [],
+    "creature": [
+      {
+        "type": "revive:infermoo",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:patch_grass_forest"
+    ],
+    []
+  ]
+}

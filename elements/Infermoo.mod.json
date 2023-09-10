@@ -47,7 +47,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
     "attackKnockback": 0.0,
@@ -124,10 +124,7 @@
     "maxNumberOfMobsPerGroup": 3,
     "restrictionBiomes": [
       {
-        "value": "nether"
-      },
-      {
-        "value": "crimson_forest"
+        "value": "plains"
       }
     ],
     "spawnInDungeons": false

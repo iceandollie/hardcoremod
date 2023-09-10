@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "revive:item/pixel-160x160_2"
+    "layer0": "revive:item/purple_sword"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "revive:nether_plains",
+    "nether_wastes"
+  ],
+  "features": "revive:outpost",
+  "step": "surface_structures"
+}

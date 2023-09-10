@@ -4,7 +4,7 @@
   "definition": {
     "toolType": "Sword",
     "renderType": 0,
-    "texture": "pixel-160x160_2",
+    "texture": "purple_sword",
     "customModelName": "Normal",
     "name": "Purple Sword",
     "specialInfo": [],

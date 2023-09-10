@@ -6,6 +6,8 @@
   "advancements.eg.descr": "Obtain a frozen sniffer egg in a dungeon.",
   "subtitles.voicecrack": "",
   "block.revive.frozen_sniffer_egg": "Frozen Sniffer Egg",
+  "biome.revive.nether_plains": "Nether Plains",
+  "item.minecraft.tipped_arrow.effect.stunpotion": "Arrow of Stun",
   "advancements.ew.title": "Ew...",
   "advancements.ice_advancement.title": "Ice\u0027s Advancement",
   "subtitles.spec2": "",
@@ -27,10 +29,14 @@
   "block.revive.cauldron": "Cauldron",
   "item.revive.goo": "Goo",
   "entity.revive.bandit": "Bandit",
+  "item.minecraft.potion.effect.stunpotion": "Potion of Stun",
   "item.revive.infermoo_spawn_egg": "Infermoo Spawn Egg",
   "item.revive.enfirium_spawn_egg": "Enfirium Spawn Egg",
   "item.revive.life": "Life",
+  "item.minecraft.splash_potion.effect.stunpotion": "Splash Potion of Stun",
+  "item.minecraft.lingering_potion.effect.stunpotion": "Lingering Potion of Stun",
   "entity.revive.infermoo": "Infermoo",
+  "effect.revive.stun": "Stun",
   "item.revive.regular_sword": "Sword",
   "block.revive.jeb_wool": "Jeb_ Wool"
 }

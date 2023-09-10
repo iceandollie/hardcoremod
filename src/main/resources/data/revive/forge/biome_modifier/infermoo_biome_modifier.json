@@ -1,9 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": [
-    "crimson_forest",
-    "nether_wastes"
-  ],
+  "biomes": "plains",
   "spawners": {
     "type": "revive:infermoo",
     "weight": 30,

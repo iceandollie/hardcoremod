@@ -31,7 +31,10 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.revive.init.ReviveModTabs;
 import net.mcreator.revive.init.ReviveModSounds;
+import net.mcreator.revive.init.ReviveModPotions;
+import net.mcreator.revive.init.ReviveModMobEffects;
 import net.mcreator.revive.init.ReviveModItems;
+import net.mcreator.revive.init.ReviveModFeatures;
 import net.mcreator.revive.init.ReviveModEntities;
 import net.mcreator.revive.init.ReviveModBlocks;
 
@@ -59,6 +62,9 @@ public class ReviveMod {
 		ReviveModEntities.REGISTRY.register(bus);
 
 		ReviveModTabs.REGISTRY.register(bus);
+		ReviveModFeatures.REGISTRY.register(bus);
+		ReviveModMobEffects.REGISTRY.register(bus);
+		ReviveModPotions.REGISTRY.register(bus);
 
 	}
 
