@@ -856,6 +856,50 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Dungeon",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dungeon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/DungeonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DungeonCommand",
+      "type": "command",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dungeon_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/command/DungeonCommandCommand.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
