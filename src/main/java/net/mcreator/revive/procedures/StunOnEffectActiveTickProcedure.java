@@ -1,8 +1,8 @@
 package net.mcreator.revive.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class StunOnEffectActiveTickProcedure {
 	public static void execute(Entity entity) {

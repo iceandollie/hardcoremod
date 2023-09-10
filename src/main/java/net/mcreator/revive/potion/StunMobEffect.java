@@ -1,12 +1,6 @@
 
 package net.mcreator.revive.potion;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffect;
-
-import net.mcreator.revive.procedures.StunOnEffectActiveTickProcedure;
-
 public class StunMobEffect extends MobEffect {
 	public StunMobEffect() {
 		super(MobEffectCategory.HARMFUL, -154);
