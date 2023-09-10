@@ -22,5 +22,13 @@
         "stream": true
       }
     ]
+  },
+  "antihero": {
+    "sounds": [
+      {
+        "name": "revive:24-taylor-swift-anti-hero",
+        "stream": true
+      }
+    ]
   }
 }

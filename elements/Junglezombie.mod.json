@@ -5,7 +5,7 @@
     "mobName": "Jungle Zombie",
     "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "1husk.png",
+    "mobModelTexture": "jungle_zombie.png",
     "mobModelGlowTexture": "",
     "solidBoundingBox": {
       "fixedValue": false

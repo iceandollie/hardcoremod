@@ -18,6 +18,6 @@ public class JunglezombieRenderer extends HumanoidMobRenderer<JunglezombieEntity
 
 	@Override
 	public ResourceLocation getTextureLocation(JunglezombieEntity entity) {
-		return new ResourceLocation("revive:textures/entities/1husk.png");
+		return new ResourceLocation("revive:textures/entities/jungle_zombie.png");
 	}
 }
