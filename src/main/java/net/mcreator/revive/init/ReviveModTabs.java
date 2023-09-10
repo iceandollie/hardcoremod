@@ -34,6 +34,7 @@ public class ReviveModTabs {
 			tabData.accept(ReviveModItems.CHEESE.get());
 			tabData.accept(ReviveModItems.FIRE.get());
 			tabData.accept(ReviveModItems.MUSIC.get());
+			tabData.accept(ReviveModItems.PURPLE.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "revive:purple"
+    },
+    "title": {
+      "translate": "advancements.purpleadvance.title"
+    },
+    "description": {
+      "translate": "advancements.purpleadvance.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "purpleadvance": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "revive:purple"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "revive:ice_advancement"
+}
