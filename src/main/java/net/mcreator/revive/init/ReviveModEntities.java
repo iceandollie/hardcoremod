@@ -27,13 +27,13 @@ public class ReviveModEntities {
 	public static final RegistryObject<EntityType<EnfiriumEntity>> ENFIRIUM = register("enfirium",
 			EntityType.Builder.<EnfiriumEntity>of(EnfiriumEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EnfiriumEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 8f));
 	public static final RegistryObject<EntityType<BanditEntity>> BANDIT = register("bandit",
 			EntityType.Builder.<BanditEntity>of(BanditEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BanditEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<InfermooEntity>> INFERMOO = register("infermoo",
-			EntityType.Builder.<InfermooEntity>of(InfermooEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(InfermooEntity::new).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<InfermooEntity>of(InfermooEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(InfermooEntity::new).fireImmune().sized(1f, 1.45f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

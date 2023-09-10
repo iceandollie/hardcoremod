@@ -6,21 +6,21 @@
     "mobLabel": "",
     "mobModelName": "Modelinfermoo",
     "mobModelTexture": "infermoo.png",
-    "mobModelGlowTexture": "infermoo.png",
+    "mobModelGlowTexture": "",
     "solidBoundingBox": {
       "fixedValue": false
     },
-    "modelWidth": 0.6,
-    "modelHeight": 1.8,
+    "modelWidth": 1.0,
+    "modelHeight": 1.45,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -26266,
+      "value": -39424,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16711885,
+      "value": -26266,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -69,9 +69,9 @@
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": true,
-    "immuneToArrows": true,
+    "immuneToArrows": false,
     "immuneToFallDamage": false,
-    "immuneToCactus": true,
+    "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
@@ -82,7 +82,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.LEATHER"
+      "value": "Items.BEEF"
     },
     "livingSound": {
       "value": "entity.cow.ambient"
@@ -96,12 +96,19 @@
     "stepSound": {
       "value": "entity.cow.step"
     },
+    "onRightClickedOn": {
+      "name": "InfermooRightClickedOnEntity"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "breedable": false,
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": true,
     "tameable": false,
-    "breedTriggerItems": [],
+    "breedTriggerItems": [
+      {
+        "value": "Blocks.WHEAT"
+      }
+    ],
     "ranged": false,
     "rangedAttackItem": {
       "value": ""
@@ -112,24 +119,15 @@
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 30,
-    "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 3,
     "restrictionBiomes": [
       {
-        "value": "desert"
+        "value": "nether"
       },
       {
-        "value": "badlands"
-      },
-      {
-        "value": "mutated_forest"
-      },
-      {
-        "value": "plains"
-      },
-      {
-        "value": "mutated_plains"
+        "value": "crimson_forest"
       }
     ],
     "spawnInDungeons": false

@@ -705,6 +705,14 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -777,9 +785,36 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/revive/entity/InfermooEntity.java",
-          "src/main/java/net/mcreator/revive/client/renderer/InfermooRenderer.java",
           "src/main/resources/data/revive/forge/biome_modifier/infermoo_biome_modifier.json",
+          "src/main/java/net/mcreator/revive/client/renderer/InfermooRenderer.java",
           "src/main/resources/assets/revive/models/item/infermoo_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "InfermooRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infermoo_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/InfermooRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "InfermooLoot",
+      "type": "loottable",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infermoo_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/loot_tables/entities/infermoo.json"
         ]
       }
     }
