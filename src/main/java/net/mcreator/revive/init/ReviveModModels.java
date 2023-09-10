@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.revive.client.model.Modelinfermoo;
+import net.mcreator.revive.client.model.Modelenfirium2;
 import net.mcreator.revive.client.model.Modelenfirium;
 import net.mcreator.revive.client.model.Modelbandit;
 
@@ -19,6 +20,7 @@ public class ReviveModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelinfermoo.LAYER_LOCATION, Modelinfermoo::createBodyLayer);
 		event.registerLayerDefinition(Modelenfirium.LAYER_LOCATION, Modelenfirium::createBodyLayer);
+		event.registerLayerDefinition(Modelenfirium2.LAYER_LOCATION, Modelenfirium2::createBodyLayer);
 		event.registerLayerDefinition(Modelbandit.LAYER_LOCATION, Modelbandit::createBodyLayer);
 	}
 }

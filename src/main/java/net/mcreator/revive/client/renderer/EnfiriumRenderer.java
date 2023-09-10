@@ -6,11 +6,11 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 import net.mcreator.revive.entity.EnfiriumEntity;
-import net.mcreator.revive.client.model.Modelenfirium;
+import net.mcreator.revive.client.model.Modelenfirium2;
 
-public class EnfiriumRenderer extends MobRenderer<EnfiriumEntity, Modelenfirium<EnfiriumEntity>> {
+public class EnfiriumRenderer extends MobRenderer<EnfiriumEntity, Modelenfirium2<EnfiriumEntity>> {
 	public EnfiriumRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelenfirium(context.bakeLayer(Modelenfirium.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelenfirium2(context.bakeLayer(Modelenfirium2.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
