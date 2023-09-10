@@ -14,5 +14,13 @@
         "stream": true
       }
     ]
+  },
+  "spec2": {
+    "sounds": [
+      {
+        "name": "revive:recording_3-1",
+        "stream": true
+      }
+    ]
   }
 }

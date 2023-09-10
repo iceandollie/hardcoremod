@@ -44,6 +44,7 @@ public class ReviveModItems {
 	public static final RegistryObject<Item> PURPLE = REGISTRY.register("purple", () -> new PurpleItem());
 	public static final RegistryObject<Item> BANDIT_SPAWN_EGG = REGISTRY.register("bandit_spawn_egg", () -> new ForgeSpawnEggItem(ReviveModEntities.BANDIT, -10066330, -52429, new Item.Properties()));
 	public static final RegistryObject<Item> INFERMOO_SPAWN_EGG = REGISTRY.register("infermoo_spawn_egg", () -> new ForgeSpawnEggItem(ReviveModEntities.INFERMOO, -26266, -16711885, new Item.Properties()));
+	public static final RegistryObject<Item> JUNGLEZOMBIE_SPAWN_EGG = REGISTRY.register("junglezombie_spawn_egg", () -> new ForgeSpawnEggItem(ReviveModEntities.JUNGLEZOMBIE, -16737997, -3355648, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

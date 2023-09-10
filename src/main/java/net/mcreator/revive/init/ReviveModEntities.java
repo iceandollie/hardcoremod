@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.revive.entity.JunglezombieEntity;
 import net.mcreator.revive.entity.InfermooEntity;
 import net.mcreator.revive.entity.EnfiriumEntity;
 import net.mcreator.revive.entity.BanditEntity;
@@ -34,6 +35,10 @@ public class ReviveModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<InfermooEntity>> INFERMOO = register("infermoo",
 			EntityType.Builder.<InfermooEntity>of(InfermooEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(InfermooEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<JunglezombieEntity>> JUNGLEZOMBIE = register("junglezombie",
+			EntityType.Builder.<JunglezombieEntity>of(JunglezombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JunglezombieEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -45,6 +50,7 @@ public class ReviveModEntities {
 			EnfiriumEntity.init();
 			BanditEntity.init();
 			InfermooEntity.init();
+			JunglezombieEntity.init();
 		});
 	}
 
@@ -53,5 +59,6 @@ public class ReviveModEntities {
 		event.put(ENFIRIUM.get(), EnfiriumEntity.createAttributes().build());
 		event.put(BANDIT.get(), BanditEntity.createAttributes().build());
 		event.put(INFERMOO.get(), InfermooEntity.createAttributes().build());
+		event.put(JUNGLEZOMBIE.get(), JunglezombieEntity.createAttributes().build());
 	}
 }

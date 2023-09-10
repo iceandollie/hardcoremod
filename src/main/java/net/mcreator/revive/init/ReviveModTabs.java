@@ -41,6 +41,7 @@ public class ReviveModTabs {
 			tabData.accept(ReviveModItems.ENFIRIUM_SPAWN_EGG.get());
 			tabData.accept(ReviveModItems.BANDIT_SPAWN_EGG.get());
 			tabData.accept(ReviveModItems.INFERMOO_SPAWN_EGG.get());
+			tabData.accept(ReviveModItems.JUNGLEZOMBIE_SPAWN_EGG.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {

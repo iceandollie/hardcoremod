@@ -616,8 +616,8 @@
       "registry_name": "cheese",
       "metadata": {
         "files": [
-          "src/main/resources/assets/revive/models/item/cheese.json",
-          "src/main/java/net/mcreator/revive/item/CheeseItem.java"
+          "src/main/java/net/mcreator/revive/item/CheeseItem.java",
+          "src/main/resources/assets/revive/models/item/cheese.json"
         ]
       },
       "path": "~/SWORDS"
@@ -782,6 +782,53 @@
           "src/main/resources/assets/revive/models/item/infermoo_spawn_egg.json"
         ]
       }
+    },
+    {
+      "name": "CheeseRightclicked",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/CheeseRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SWORDS"
+    },
+    {
+      "name": "Junglezombie",
+      "type": "livingentity",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "junglezombie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/client/renderer/JunglezombieRenderer.java",
+          "src/main/resources/assets/revive/models/item/junglezombie_spawn_egg.json",
+          "src/main/java/net/mcreator/revive/entity/JunglezombieEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -801,6 +848,14 @@
       ],
       "category": "music",
       "subtitle": ""
+    },
+    {
+      "name": "spec2",
+      "files": [
+        "recording_3-1"
+      ],
+      "category": "music",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -814,7 +869,9 @@
       "block.revive.frozen_sniffer_egg": "Frozen Sniffer Egg",
       "advancements.ew.title": "Ew...",
       "advancements.ice_advancement.title": "Ice\u0027s Advancement",
+      "subtitles.spec2": "",
       "advancements.eg.title": "Should we boil it ?",
+      "item.revive.junglezombie_spawn_egg": "Jungle Zombie Spawn Egg",
       "advancements.purpleadvance.descr": "You have gotten the unforgiving purple sword.. use it wisely.",
       "advancements.purpleadvance.title": "Sacred Purple Sword",
       "item.revive.gray": "Gamersupps",
@@ -825,6 +882,7 @@
       "block.revive.fragile_mud_bricks": "Fragile Mud Bricks",
       "entity.revive.enfirium": "Enfirium",
       "item.revive.icesword": "Ice Sword",
+      "entity.revive.junglezombie": "Jungle Zombie",
       "advancements.ice_advancement.descr": "It might be usefull or fun or both",
       "block.revive.cauldron": "Cauldron",
       "item.revive.goo": "Goo",
