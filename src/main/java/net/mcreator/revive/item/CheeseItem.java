@@ -45,7 +45,7 @@ public class CheeseItem extends SwordItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		CheeseRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ());
+		CheeseRightclickedProcedure.execute(entity, ar.getObject());
 		return ar;
 	}
 }
