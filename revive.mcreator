@@ -729,8 +729,8 @@
       "registry_name": "purple",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/revive/item/PurpleItem.java",
-          "src/main/resources/assets/revive/models/item/purple.json"
+          "src/main/resources/assets/revive/models/item/purple.json",
+          "src/main/java/net/mcreator/revive/item/PurpleItem.java"
         ]
       }
     },
