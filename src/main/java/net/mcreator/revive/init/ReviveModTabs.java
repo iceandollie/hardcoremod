@@ -47,6 +47,7 @@ public class ReviveModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(ReviveModItems.LIFE.get());
 			tabData.accept(ReviveModItems.GOO.get());
+			tabData.accept(ReviveModItems.ENFIRIUM_PETAL.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {

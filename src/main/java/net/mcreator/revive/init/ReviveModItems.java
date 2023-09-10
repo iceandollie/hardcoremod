@@ -22,6 +22,7 @@ import net.mcreator.revive.item.IceswordItem;
 import net.mcreator.revive.item.GrayItem;
 import net.mcreator.revive.item.GooItem;
 import net.mcreator.revive.item.FireItem;
+import net.mcreator.revive.item.EnfiriumPetalItem;
 import net.mcreator.revive.item.CheeseItem;
 import net.mcreator.revive.ReviveMod;
 
@@ -45,6 +46,7 @@ public class ReviveModItems {
 	public static final RegistryObject<Item> BANDIT_SPAWN_EGG = REGISTRY.register("bandit_spawn_egg", () -> new ForgeSpawnEggItem(ReviveModEntities.BANDIT, -10066330, -52429, new Item.Properties()));
 	public static final RegistryObject<Item> INFERMOO_SPAWN_EGG = REGISTRY.register("infermoo_spawn_egg", () -> new ForgeSpawnEggItem(ReviveModEntities.INFERMOO, -39424, -26266, new Item.Properties()));
 	public static final RegistryObject<Item> JUNGLEZOMBIE_SPAWN_EGG = REGISTRY.register("junglezombie_spawn_egg", () -> new ForgeSpawnEggItem(ReviveModEntities.JUNGLEZOMBIE, -16737997, -3355648, new Item.Properties()));
+	public static final RegistryObject<Item> ENFIRIUM_PETAL = REGISTRY.register("enfirium_petal", () -> new EnfiriumPetalItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -465,8 +465,8 @@
       "registry_name": "gray",
       "metadata": {
         "files": [
-          "src/main/resources/assets/revive/models/item/gray.json",
-          "src/main/java/net/mcreator/revive/item/GrayItem.java"
+          "src/main/java/net/mcreator/revive/item/GrayItem.java",
+          "src/main/resources/assets/revive/models/item/gray.json"
         ]
       },
       "path": "~/SWORDS"
@@ -601,8 +601,8 @@
       "registry_name": "icesword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/revive/item/IceswordItem.java",
-          "src/main/resources/assets/revive/models/item/icesword.json"
+          "src/main/resources/assets/revive/models/item/icesword.json",
+          "src/main/java/net/mcreator/revive/item/IceswordItem.java"
         ]
       },
       "path": "~/SWORDS"
@@ -761,7 +761,6 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/revive/models/item/bandit_spawn_egg.json",
-          "src/main/resources/data/revive/forge/biome_modifier/bandit_biome_modifier.json",
           "src/main/java/net/mcreator/revive/entity/BanditEntity.java",
           "src/main/java/net/mcreator/revive/client/renderer/BanditRenderer.java"
         ]
@@ -778,7 +777,6 @@
         "files": [
           "src/main/java/net/mcreator/revive/entity/InfermooEntity.java",
           "src/main/java/net/mcreator/revive/client/renderer/InfermooRenderer.java",
-          "src/main/resources/data/revive/forge/biome_modifier/infermoo_biome_modifier.json",
           "src/main/resources/assets/revive/models/item/infermoo_spawn_egg.json"
         ]
       }
@@ -796,20 +794,12 @@
         ],
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
+            "name": "entity",
+            "type": "entity"
           },
           {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -824,9 +814,9 @@
       "registry_name": "junglezombie",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/revive/client/renderer/JunglezombieRenderer.java",
           "src/main/resources/assets/revive/models/item/junglezombie_spawn_egg.json",
-          "src/main/java/net/mcreator/revive/entity/JunglezombieEntity.java"
+          "src/main/java/net/mcreator/revive/entity/JunglezombieEntity.java",
+          "src/main/java/net/mcreator/revive/client/renderer/JunglezombieRenderer.java"
         ]
       }
     },
@@ -974,17 +964,6 @@
       }
     },
     {
-      "name": "Vampireexlir",
-      "type": "potion",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vampireexlir",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
       "name": "EnfiriumEntityIsHurt",
       "type": "procedure",
       "sortid": 50,
@@ -1004,6 +983,46 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "EnfiriumPetal",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enfirium_petal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/item/EnfiriumPetalItem.java",
+          "src/main/resources/assets/revive/models/item/enfirium_petal.json"
+        ]
+      }
+    },
+    {
+      "name": "Petal",
+      "type": "loottable",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/loot_tables/entities/enfirium.json"
+        ]
+      }
+    },
+    {
+      "name": "Petalcraft",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petalcraft",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/recipes/brewing/PetalcraftBrewingRecipe.java"
         ]
       }
     }
@@ -1052,6 +1071,9 @@
       "advancements.eg.descr": "Obtain a frozen sniffer egg in a dungeon.",
       "subtitles.voicecrack": "",
       "block.revive.frozen_sniffer_egg": "Frozen Sniffer Egg",
+      "biome.revive.nether_plains": "Nether Plains",
+      "item.revive.enfirium_petal": "Enfirium Petal",
+      "item.minecraft.tipped_arrow.effect.stunpotion": "Arrow of Stun",
       "advancements.ew.title": "Ew...",
       "advancements.ice_advancement.title": "Ice\u0027s Advancement",
       "subtitles.spec2": "",
@@ -1073,10 +1095,14 @@
       "block.revive.cauldron": "Cauldron",
       "item.revive.goo": "Goo",
       "entity.revive.bandit": "Bandit",
+      "item.minecraft.potion.effect.stunpotion": "Potion of Stun",
       "item.revive.infermoo_spawn_egg": "Infermoo Spawn Egg",
       "item.revive.enfirium_spawn_egg": "Enfirium Spawn Egg",
       "item.revive.life": "Life",
+      "item.minecraft.splash_potion.effect.stunpotion": "Splash Potion of Stun",
+      "item.minecraft.lingering_potion.effect.stunpotion": "Lingering Potion of Stun",
       "entity.revive.infermoo": "Infermoo",
+      "effect.revive.stun": "Stun",
       "item.revive.regular_sword": "Sword",
       "block.revive.jeb_wool": "Jeb_ Wool"
     }

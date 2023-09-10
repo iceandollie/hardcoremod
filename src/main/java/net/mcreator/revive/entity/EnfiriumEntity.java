@@ -29,6 +29,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.revive.procedures.EnfiriumEntityIsHurtProcedure;
 import net.mcreator.revive.init.ReviveModEntities;
 
 public class EnfiriumEntity extends Monster {
@@ -91,9 +92,16 @@ public class EnfiriumEntity extends Monster {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
+		EnfiriumEntityIsHurtProcedure.execute(this.level(), this);
 		if (source.is(DamageTypes.CACTUS))
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void playerTouch(Player sourceentity) {
+		super.playerTouch(sourceentity);
+		EnfiriumEntityIsHurtProcedure.execute(this.level(), this);
 	}
 
 	@Override
