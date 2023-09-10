@@ -1,16 +1,13 @@
 {
   "type": "forge:add_spawns",
   "biomes": [
-    "badlands",
-    "sunflower_plains",
-    "plains",
-    "flower_forest",
-    "desert"
+    "crimson_forest",
+    "nether_wastes"
   ],
   "spawners": {
     "type": "revive:infermoo",
     "weight": 30,
-    "minCount": 4,
-    "maxCount": 4
+    "minCount": 1,
+    "maxCount": 3
   }
 }
