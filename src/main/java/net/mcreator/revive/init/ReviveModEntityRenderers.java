@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.mcreator.revive.client.renderer.InfermooRenderer;
 import net.mcreator.revive.client.renderer.EnfiriumRenderer;
 import net.mcreator.revive.client.renderer.BanditRenderer;
 
@@ -18,5 +19,6 @@ public class ReviveModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(ReviveModEntities.ENFIRIUM.get(), EnfiriumRenderer::new);
 		event.registerEntityRenderer(ReviveModEntities.BANDIT.get(), BanditRenderer::new);
+		event.registerEntityRenderer(ReviveModEntities.INFERMOO.get(), InfermooRenderer::new);
 	}
 }

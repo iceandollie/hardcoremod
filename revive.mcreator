@@ -766,6 +766,22 @@
           "src/main/java/net/mcreator/revive/client/renderer/BanditRenderer.java"
         ]
       }
+    },
+    {
+      "name": "Infermoo",
+      "type": "livingentity",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infermoo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/entity/InfermooEntity.java",
+          "src/main/java/net/mcreator/revive/client/renderer/InfermooRenderer.java",
+          "src/main/resources/data/revive/forge/biome_modifier/infermoo_biome_modifier.json",
+          "src/main/resources/assets/revive/models/item/infermoo_spawn_egg.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -813,8 +829,10 @@
       "block.revive.cauldron": "Cauldron",
       "item.revive.goo": "Goo",
       "entity.revive.bandit": "Bandit",
+      "item.revive.infermoo_spawn_egg": "Infermoo Spawn Egg",
       "item.revive.enfirium_spawn_egg": "Enfirium Spawn Egg",
       "item.revive.life": "Life",
+      "entity.revive.infermoo": "Infermoo",
       "item.revive.regular_sword": "Sword",
       "block.revive.jeb_wool": "Jeb_ Wool"
     }
