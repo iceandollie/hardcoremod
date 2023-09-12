@@ -437,6 +437,14 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -844,7 +852,32 @@
         "files": [
           "src/main/java/net/mcreator/revive/procedures/InfermooRightClickedOnEntityProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -974,16 +1007,7 @@
         "files": [
           "src/main/java/net/mcreator/revive/procedures/EnfiriumEntityIsHurtProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -1023,6 +1047,98 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/revive/recipes/brewing/PetalcraftBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "RandomSword",
+      "type": "item",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/item/RandomSwordItem.java",
+          "src/main/resources/assets/revive/models/item/random_sword.json"
+        ]
+      },
+      "path": "~/SWORDS"
+    },
+    {
+      "name": "RandomSwordRightclicked",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_sword_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/revive/procedures/RandomSwordRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SWORDS"
+    },
+    {
+      "name": "Pouch",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pouch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/recipes/pouch.json"
+        ]
+      },
+      "path": "~/SWORDS"
+    },
+    {
+      "name": "Bundle",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bundle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/recipes/bundle.json"
+        ]
+      },
+      "path": "~/SWORDS"
+    },
+    {
+      "name": "Rfragile",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rfragile",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/recipes/rfragile.json"
         ]
       }
     }
@@ -1091,6 +1207,7 @@
       "entity.revive.enfirium": "Enfirium",
       "item.revive.icesword": "Ice Sword",
       "entity.revive.junglezombie": "Jungle Zombie",
+      "item.revive.random_sword": "Sword Pouch",
       "advancements.ice_advancement.descr": "It might be usefull or fun or both",
       "block.revive.cauldron": "Cauldron",
       "item.revive.goo": "Goo",

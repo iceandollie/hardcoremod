@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:mud_bricks"
+    },
+    "3": {
+      "item": "minecraft:mud_bricks"
+    },
+    "4": {
+      "item": "minecraft:clay_ball"
+    },
+    "5": {
+      "item": "minecraft:mud_bricks"
+    },
+    "7": {
+      "item": "minecraft:mud_bricks"
+    }
+  },
+  "result": {
+    "item": "revive:fragile_mud_bricks",
+    "count": 4
+  }
+}

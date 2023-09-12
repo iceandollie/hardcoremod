@@ -1,0 +1,48 @@
+{
+  "_fv": 47,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.MUD_BRICKS"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.MUD_BRICKS"
+      },
+      {
+        "value": "Items.CLAY_BALL"
+      },
+      {
+        "value": "Blocks.MUD_BRICKS"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.MUD_BRICKS"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:FragileMudBricks"
+    },
+    "name": "rfragile",
+    "namespace": "mod"
+  }
+}

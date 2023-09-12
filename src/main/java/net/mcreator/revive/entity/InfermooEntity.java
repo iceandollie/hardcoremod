@@ -114,7 +114,7 @@ public class InfermooEntity extends Animal {
 		Entity entity = this;
 		Level world = this.level();
 
-		InfermooRightClickedOnEntityProcedure.execute();
+		InfermooRightClickedOnEntityProcedure.execute(world, x, y, z, entity, sourceentity);
 		return retval;
 	}
 
