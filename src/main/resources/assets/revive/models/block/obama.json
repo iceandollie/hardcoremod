@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "revive:block/obama",
+    "particle": "revive:block/obama"
+  },
+  "render_type": "cutout"
+}

@@ -57,6 +57,7 @@ public class ReviveModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(ReviveModBlocks.FROZEN_SNIFFER_EGG.get().asItem());
+			tabData.accept(ReviveModBlocks.OBAMA.get().asItem());
 		}
 	}
 }

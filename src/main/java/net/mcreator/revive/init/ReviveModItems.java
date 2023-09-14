@@ -49,6 +49,7 @@ public class ReviveModItems {
 	public static final RegistryObject<Item> JUNGLEZOMBIE_SPAWN_EGG = REGISTRY.register("junglezombie_spawn_egg", () -> new ForgeSpawnEggItem(ReviveModEntities.JUNGLEZOMBIE, -16737997, -3355648, new Item.Properties()));
 	public static final RegistryObject<Item> ENFIRIUM_PETAL = REGISTRY.register("enfirium_petal", () -> new EnfiriumPetalItem());
 	public static final RegistryObject<Item> RANDOM_SWORD = REGISTRY.register("random_sword", () -> new RandomSwordItem());
+	public static final RegistryObject<Item> OBAMA = block(ReviveModBlocks.OBAMA);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

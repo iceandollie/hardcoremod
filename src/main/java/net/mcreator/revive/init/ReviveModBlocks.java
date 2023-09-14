@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.revive.block.ObamaBlock;
 import net.mcreator.revive.block.JebWoolBlock;
 import net.mcreator.revive.block.FrozenSnifferEggBlock;
 import net.mcreator.revive.block.FragileMudBricksBlock;
@@ -22,4 +23,5 @@ public class ReviveModBlocks {
 	public static final RegistryObject<Block> JEB_WOOL = REGISTRY.register("jeb_wool", () -> new JebWoolBlock());
 	public static final RegistryObject<Block> FROZEN_SNIFFER_EGG = REGISTRY.register("frozen_sniffer_egg", () -> new FrozenSnifferEggBlock());
 	public static final RegistryObject<Block> FRAGILE_MUD_BRICKS = REGISTRY.register("fragile_mud_bricks", () -> new FragileMudBricksBlock());
+	public static final RegistryObject<Block> OBAMA = REGISTRY.register("obama", () -> new ObamaBlock());
 }
