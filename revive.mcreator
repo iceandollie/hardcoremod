@@ -1151,14 +1151,23 @@
       "registry_name": "obama",
       "metadata": {
         "files": [
-          "src/main/resources/assets/revive/models/item/obama.json",
-          "src/main/resources/data/revive/forge/biome_modifier/obama_biome_modifier.json",
-          "src/main/resources/assets/revive/blockstates/obama.json",
-          "src/main/java/net/mcreator/revive/world/features/plants/ObamaFeature.java",
-          "src/main/resources/data/revive/worldgen/configured_feature/obama.json",
-          "src/main/resources/data/revive/worldgen/placed_feature/obama.json",
           "src/main/java/net/mcreator/revive/block/ObamaBlock.java",
-          "src/main/resources/assets/revive/models/block/obama.json"
+          "src/main/resources/assets/revive/blockstates/obama.json",
+          "src/main/resources/assets/revive/models/block/obama.json",
+          "src/main/resources/assets/revive/models/item/obama.json"
+        ]
+      }
+    },
+    {
+      "name": "Obamar",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obamar",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/revive/recipes/obamar.json"
         ]
       }
     }

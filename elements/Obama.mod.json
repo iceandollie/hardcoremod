@@ -78,13 +78,11 @@
     "speedFactor": 1.0,
     "canBePlacedOn": [],
     "isBonemealable": false,
-    "frequencyOnChunks": 5,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "frequencyOnChunks": 2,
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "generationType": "Flower",
-    "patchSize": 64,
+    "patchSize": 4,
     "generateAtAnyHeight": false
   }
 }
